@@ -1,17 +1,10 @@
 apiversion: v1
-kind: apiVersion: v1
 kind: Pod
 metadata:
-  name: reddy_pod
-  labels:
-    name: myapp
+  name: reddy-Pod
 spec:
   containers:
-  - name: myapp
-    image: <Image>
-    resources:
-      limits:
-        memory: "128Mi"
-        cpu: "500m"
+  - name: reddy-container
+    image: nginx
     ports:
-      - containerPort: <Port>
+      - containerPort: 80
